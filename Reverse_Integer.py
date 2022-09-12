@@ -5,4 +5,5 @@ else:
     a=abs(n)
     tmp=int(str(a)[::-1])
     res='-'+str(tmp)
+    res=int(res)
 print(res)
