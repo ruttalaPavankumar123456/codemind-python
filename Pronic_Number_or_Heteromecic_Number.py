@@ -1,11 +1,11 @@
-x=int(input())
-temp=0
-for i in range(x):
-    if i*(i+1)==x:
+n=int(input())
+for i in range (1,n+1):
+    if (i*(i+1))==n:
         temp=True
+        break
     else:
-        tem=False
+        temp=False
 if temp==True:
-    print('YES')
+    print("YES")
 else:
-    print("NO")
+    print('NO')
