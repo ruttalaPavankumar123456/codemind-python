@@ -11,5 +11,6 @@ for i in range(len(x)):
     if x[i]%2==0:
         eve2=i
 for i in range(eve1+1,eve2):
+    if x[i]%2==0:
         c+=1
 print(c)
