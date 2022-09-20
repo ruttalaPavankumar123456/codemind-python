@@ -5,14 +5,15 @@ space=' '
 v=c=d=s=0
 for i in range (len(x)):
     if x[i] in vowel:
-        v+=1
+       v+=1
     elif x[i] in digits:
         d+=1
+        
     elif x[i] in space:
         s+=1
     else:
         c+=1
-print('Vowels:',v)
-print('Consonants:',c)
-print('Digits:',d)
-print('White spaces:',s)
+print("Vowels:", v) 
+print('Consonants:', c)
+print("Digits:", d)
+print('White spaces:', s)
