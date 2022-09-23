@@ -1,12 +1,12 @@
 x=int(input())
-pro=1
-sum=0
+s=0
+p=1
 while x!=0:
-    z=x%10
-    sum+=z
-    pro*=z
+    y=x%10
+    s+=y
+    p*=y
     x//=10
-if sum==pro:
+if s==p:
     print('Spy Number')
 else:
     print('Not Spy Number')
