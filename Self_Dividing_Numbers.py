@@ -1,11 +1,17 @@
 a=int(input())
 b=int(input())
-for i in range(a,b+1):
+for x in range(a,b+1):
+    z=x
     c=0
-    k=i
-    i=str(i)
-    for j in i:
-        if j!="0" and k%int(j)==0:
+    while x:
+        r=x%10
+        if r==0:
+            x=x//10
+            continue
+        elif z%r==0:
             c+=1
-    if c==len(i):
-        print(k,end=" ")
+        x=x//10
+    if len(str(z))==c:
+        print(z,end=" ")
+        
+        
