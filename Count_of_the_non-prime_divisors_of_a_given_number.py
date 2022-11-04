@@ -8,9 +8,9 @@ for j in range (1,n+1):
 for i in range (len(l)):
     a=l[i]
     cnt=0
-    for k in range (2,a):
+    for k in range (1,a+1):
         if a%k==0:
             cnt+=1
-    if cnt!=0:
+    if cnt!=2:
         l1.append(k)
-print(len(l1)+1)
+print(len(l1))
