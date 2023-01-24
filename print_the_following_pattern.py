@@ -1,8 +1,7 @@
 n=int(input())
-a=''
-for j in range (1,n+1):
-    a+=str(j)
-a=int(a)
-for j in range(len(str(a))):
-    print(a)
-    a//=10
+s=[]
+for j in range(n,0,-1):
+    s.append(j)
+for i in range(n):
+    print(*s,end=' ')
+    print()
