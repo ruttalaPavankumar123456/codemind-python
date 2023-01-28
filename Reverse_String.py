@@ -1,3 +1,4 @@
-x=str(input())
-y=x[::-1]
-print(y)
+x=input().split()
+x=x[::-1]
+for j in x:
+    print(j,end=' ')
