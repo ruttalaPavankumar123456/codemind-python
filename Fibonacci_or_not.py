@@ -1,15 +1,18 @@
+i=0
+j=1
+su=0
 n=int(input())
-a=0
-b=1
-l=[]
-l.append(a)
-l.append(b)
-for j in range (n):
-    c=a+b
-    a=b
-    b=c
-    l.append(c)
-if n in l:
-    print(True)
+m=0
+while True:
+    su=i+j
+    i=j
+    j=su
+    if su==n:
+        m=True
+        break
+    if su>n:
+        break
+if m==True:
+    print('True')
 else:
-    print(False)
+    print('False')
