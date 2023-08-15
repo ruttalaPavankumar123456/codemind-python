@@ -1,18 +1,20 @@
-def prime(n):
-    if n==1:
-        return False
-    for i in range(2, n // 2 + 1):
-        if n%i == 0:
+def pri(x):
+    for i in range(2,int(x**0.5)):
+        if x%i==0:
             return False
-    return True
-    
-n = int(input())
-found = 0
-for i in range(2, n // 2 + 1):
-    if n%i == 0:
-        if prime(i) and prime(n // i):
-            print(i, n // i)
-            found = 1
             break
-if found == 0:
- print(-1)
+    else:
+        return True
+a=int(input())
+z=[]
+for x in range(2,a//2):
+    if a%x==0:
+        y=a//x
+        if (pri(x)==True) and (pri(y)==True):
+            z.append(x)
+            z.append(y)
+            break
+if z:
+    print(*z)
+else:
+    print(-1)
